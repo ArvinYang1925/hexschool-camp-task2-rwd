@@ -98,7 +98,6 @@ body {
 .menu li a {
     text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
     margin-right: 40px;
     color: black;
     padding: 4px 8px;
@@ -109,266 +108,262 @@ body {
 
 .section {
     text-align: center; /* Center the text */
-  }
+}
   
-  .section-title {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 38.4px;
-    letter-spacing: 0.12em;
-    margin-bottom: 10px; /* Add some space below the title */
-    position: relative; /* Required for the border */
-    display: inline-block; /* Allow the border to wrap the text */
-    padding: 0 20px; /* Add some spacing between the text and border */
-  }
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px; /* Add some space below the title */
+  position: relative; /* Required for the border */
+  display: inline-block; /* Allow the border to wrap the text */
+  padding: 0 20px; /* Add some spacing between the text and border */
+}
   
-  .section-title::before,
-  .section-title::after {
-    content: ""; /* Create empty pseudo-elements */
-    position: absolute;
-    top: 50%;
-    width: 100px; /* Adjust the length of the border */
-    height: 1px; /* Set the height of the border */
-    background-color: #ccc; /* Set the color of the border */
-  }
-  
-  .section-title::before {
-    left: 100%; /* Position the left border */
-  }
-  
-  .section-title::after {
-    right: 100%; /* Position the right border */
-  }
-  
-  .section-subtitle {
-    font-size: 16px; /* Adjust font size as needed */
-    color: #666; /* Set a lighter color for the subtitle */
-  }
+.section-title::before,
+.section-title::after {
+  content: ""; /* Create empty pseudo-elements */
+  position: absolute;
+  top: 50%;
+  width: 100px; /* Adjust the length of the border */
+  height: 1px; /* Set the height of the border */
+  background-color: #ccc; /* Set the color of the border */
+}
 
+.section-title::before {
+  left: 100%; /* Position the left border */
+}
+
+.section-title::after {
+  right: 100%; /* Position the right border */
+}
+
+.section-subtitle {
+  font-size: 16px; /* Adjust font size as needed */
+  color: #666; /* Set a lighter color for the subtitle */
+}
+
+.content {
+  margin-top: 80px;
+  display: flex;
+}
+
+.articles {
+  margin-right: 24px;
+  width: 74%;
+  /* max-width: 996px; */
+}
+
+.article {
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.article img {
+  border-radius: 5px;
+  margin-right: 16px;
+}
+
+.article-info .date {
+  font-size: 16px;
+  padding: 4px 0;
+  margin-right: 16px;
+  color:#5B5B5B;
+  ;
+}
+
+.article-info .tag {
+  background: #F1F1F1;
+  padding: 4px 12px;
+  border-radius: 10px;
+  color: #3B3B3B;
+}
+
+.article-info h2 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3B3B3B;
+}
+
+.article-info p {
+  font-size: 16px;
+  color: #3B3B3B;
+}
+
+.side-menu{ 
+  width: 23%;
+  /* max-width: 306px; */
+  background: #FAFAFA;
+  padding-top: 80px;
+  padding-left: 80px;
+  /*  */
+}
+
+.side-menu li {
+  margin-bottom: 32px;
+}
+
+.side-menu li a {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1E1E1E;
+  &:hover{
+      color:red;
+  }
+}
+
+.footer {
+  margin-top: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-lg.png');
+  background-size: cover;
+  /* border: #000 1px solid; */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.footer-info {
+  width: 74%;
+}
+
+.footer-info .logo a {
+  width: 120px;
+  height: 54px;
+  background-size:cover;
+}
+
+.footer-info h1 {
+  width: 120px;
+  height: 54px;
+}
+.footer-info  p {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.email {
+  font-size: 20px;
+  color: #919191;
+}
+
+.footer-menu {
+  width: 23%;
+}
+
+.footer-menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  border: 1px solid #C1C1C1;
+  padding: 8px 24px 8px 24px;
+  border-radius: 8px;
+}
+
+.footer-menu li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #3B3B3B;
+  &:nth-child(1) {
+    color: #fff;
+  }
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+.icon.list {
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/list.svg');
+  background-size: cover;
+}
+
+.icon.instagram {
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg');
+  background-size: cover;
+}
+
+.icon.facebook {
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/facebook.svg');
+  background-size: cover;
+}
+
+.bg-black {
+  background: #000;
+}
+
+@media(max-width: 992px) {
+  .header {
+    flex-direction: column;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
+  .logo a {
+    margin-right: 0;
+  }
+  .menu {
+    display: block;
+    text-align: center;
+  }
+  .menu li a {
+    margin-right: 0;
+  }
   .content {
-    margin-top: 80px;
-    display: flex;
+      display: flex;
+      flex-direction: column-reverse;
   }
-
   .articles {
-    margin-right: 24px;
-    width: 74%;
-    /* max-width: 996px; */
+      width: 100%;
+      margin-top: 40px;
+      margin-right: 0px ;
   }
-
   .article {
-    display: flex;
-    margin-bottom: 64px;
+      display: block;
   }
-
-  .article img {
-    border-radius: 5px;
-    margin-right: 16px;
+  .article-info .top-info {
+      padding: 16px 8px;
+      display: flex;
+      justify-content: space-between;
   }
-
-  .article-info .date {
-    font-size: 16px;
-    font-weight: 400; 
-    padding: 4px 0;
-    margin-right: 16px;
-    color:#5B5B5B;
-    ;
-  }
-
-  .article-info .tag {
-    background: #F1F1F1;
-    padding: 4px 12px;
-    border-radius: 10px;
-    color: #3B3B3B;
-  }
-
   .article-info h2 {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-size: 20px;
-    font-weight: 600;
-    color: #3B3B3B;
+      font-size: 20px;
   }
-
-  .article-info p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #3B3B3B;
-  }
-
   .side-menu{ 
-    width: 23%;
-    /* max-width: 306px; */
-    background: #FAFAFA;
-    padding-top: 80px;
-    padding-left: 80px;
-    /*  */
+      width: 100%;
+      display: flex;
+      padding: 20px;
   }
-
   .side-menu li {
-    margin-bottom: 32px;
+      margin-right: 8px;
   }
-
-  .side-menu li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #1E1E1E;
-    &:hover{
-        color:red;
-    }
-  }
-
-  .footer {
-    margin-top: 120px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2024%20web-camp/footer-bg-lg.png');
-    background-size: cover;
-    /* border: #000 1px solid; */
-  }
-
   .footer-content {
     display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  .footer-info {
-    width: 74%;
-  }
-
-  .footer-info .logo a {
-    width: 120px;
-    height: 54px;
-    background-size:cover;
-  }
-
-  .footer-info h1 {
-    width: 120px;
-    height: 54px;
-  }
-  .footer-info  p {
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-  .email {
-    font-size: 20px;
-    font-weight: 400;
-    color: #919191;
-  }
-
-  .footer-menu {
-    width: 23%;
-  }
-
-  .footer-menu li {
-    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
-    margin-bottom: 24px;
-    border: 1px solid #C1C1C1;
-    padding: 8px 24px 8px 24px;
-    border-radius: 8px;
   }
-
-  .footer-menu li a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    color: #3B3B3B;
-    &:nth-child(1) {
-      color: #fff;
-    }
+  .footer-info {
+    width: 50%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .icon {
-    width: 56px;
-    height: 56px;
-    margin-right: 10px;
+  .footer-menu {
+    width: 50%;
   }
-
-  .icon.list {
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/list.svg');
-    background-size: cover;
-  }
-  
-  .icon.instagram {
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/instagram.svg');
-    background-size: cover;
-  }
-  
-  .icon.facebook {
-    background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/facebook.svg');
-    background-size: cover;
-  }
-
-  .bg-black {
-    background: #000;
-  }
-
-  @media(max-width: 992px) {
-    .header {
-      flex-direction: column;
-    }
-    .logo {
-      margin-bottom: 20px;
-    }
-    .logo a {
-      margin-right: 0;
-    }
-    .menu {
-      display: block;
-      text-align: center;
-    }
-    .menu li a {
-      margin-right: 0;
-    }
-    .content {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .articles {
-        width: 100%;
-        margin-top: 40px;
-        margin-right: 0px ;
-    }
-    .article {
-        display: block;
-    }
-    .article-info .top-info {
-        padding: 16px 8px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .article-info h2 {
-        font-size: 20px;
-    }
-    .side-menu{ 
-        width: 100%;
-        display: flex;
-        padding: 20px;
-    }
-    .side-menu li {
-        margin-right: 8px;
-    }
-    .footer-content {
-      display: flex;
-      flex-direction: column;
-      /* justify-content: center; */
-      align-items: center;
-    }
-    .footer-info {
-      width: 50%;
-      margin-bottom: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .footer-menu {
-      width: 50%;
-    }
-  }
+}
